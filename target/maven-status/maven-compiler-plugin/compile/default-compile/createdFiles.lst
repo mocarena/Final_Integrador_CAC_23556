@@ -1,0 +1,11 @@
+login\LoginServlet.class
+modelo\Orador.class
+util\ConexionDB.class
+editarOradores\eliminarOradorServlet.class
+login\Credenciales.class
+util\MostrarListaOradoresServlet.class
+editarOradores\Crud.class
+util\OradorDAO.class
+editarOradores\eliminarOradorServlet$EliminarOradorServlet.class
+controlador\RegistroOrador.class
+dao\OradoresDAO.class

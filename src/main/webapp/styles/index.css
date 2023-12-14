@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;    
+}
+
+nav {
+    padding: 0px 70px 0px 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #353a40;    
+}
+
+.brandLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    width: 70px;
+    height: 40px;
+    background: url(/images/codoacodo.png);   
+    background-size: 70px 40px;
+}
+
+.brand {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;   
+}
+
+.navigation li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navigation a{
+    color: #9a9ea1;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navigation a.active{
+    color: white;
+}
+
+.ticket {
+    color: #309d44;
+}
+
+.slider{
+    width: 100vw;
+    max-height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul{
+    display: flex;
+    width: 300%;  
+}
+
+.slider li{
+    width: 100vw;
+    height: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover !important;
+    /* animation: slide 10s infinite alternate linear; */
+}
+
+.sliderText {
+    color: white;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: end;
+    width: 50%;
+    padding-right: 100px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 2;
+}
+
+.sliderText h2 {    
+    font-size: 2em;  
+}
+
+.overlay {
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 99.8%;
+    z-index: 1;
+}
+
+.btnWhite {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 25px 15px 0px 0px;
+}
+
+.btnTicket {
+    color: white;
+    background-color: #309d44;
+    text-decoration: none;
+    border: 1px solid #309d44;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 25px;
+}
+
+section.oradores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+section.oradores h3{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+section.oradores h2{
+    font-size: 2.3em;
+    font-weight: 600;
+    margin: 5px 0px 10px 0px;
+}
+
+.cardGroup {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 15% 0% 15%;
+}
+
+.card {
+    width: 35%;
+    border: 0.1px solid rgb(213 213 213);
+    border-radius: 5px;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+
+.cardImage {
+    width: 100%;
+}
+
+.cardImage img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.content {
+    padding: 16px;
+}
+
+.javaScript {
+    display: inline-block;
+    padding: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #fec009;
+}
+
+.react {
+    display: inline-block;
+    padding: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: #17a2b9;
+}
+
+.negocios {
+    display: inline-block;
+    padding: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: #6c747f;
+}
+
+.startups {
+    display: inline-block;
+    padding: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: #dc3546;
+}
+
+.heading h4 {
+    margin: 3px 0px 20px 0px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.cardText {
+    line-height: 1.7em;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+section.middle {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw; 
+    height: 100%;
+}
+
+.middleImage {
+    width: 50%;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.middleText {  
+    background-color: #353a40;
+    width: 50%;
+    color: white;
+    padding: 20px;
+}
+
+.middleText h3{  
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.middleText p{  
+    font-weight: 500;  
+    line-height: 1.5em;
+}
+
+section.anotate {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+section.anotate h3 {   
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+section.anotate h2 {
+    font-size: 2.3em;
+    font-weight: 600;
+    margin: 5px 0px 15px 0px;
+}
+
+section.anotate p { 
+    margin-bottom: 10px;
+}
+
+a.ignite, a.ignite:visited, a.ignite:active {   
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 2px black dotted;     
+}
+
+form {
+    width: 50vw;
+}
+
+form .inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input,
+ textarea { 
+    border: 0.1px solid rgb(213 213 213);
+    border-radius: 5px;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    resize: none;
+}
+
+form input {
+    width: 48%;
+    margin-bottom: 20px;
+    font-size: 1em !important;
+    font-weight: 500;
+}
+
+form textarea {
+    width: 100%;
+    font-size: 1.3em !important;
+    font-weight: 500;
+
+}
+
+form p {
+    font-size: 0.8em;
+    margin-bottom: 20px !important;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    font-size: 1.4em !important;
+    font-weight: 500;
+    padding: 20px;
+    color: #fff;
+    background: #96c93e;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #1e4c66;
+}
+
+.footer {
+    width: 70%;   
+    height: 100%; 
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.footer li {
+    list-style: none !important;
+}
+
+.footer li a {
+    color: white !important;
+    text-decoration: none;  
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+    
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+      
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .slider, .slider ul, .slider img{
+      height: 100vh;
+  }
+}.info {
+
+}
+
+.btn {
+
+}
+
+.btn-warning {
+
+}
+
+.table-striped {
+
+}
+
+.thead-dark {
+
+}
+
+.btn-primary {
+
+}
+
+.btn-success {
+
+}
